@@ -29,7 +29,7 @@ $Url = "https://test.sharepoint.com/sites/hr"
 $context = Get-SPOContext -Url $Url -UserName $UserName -Password $Password
 $list = $context.Web.Lists.GetByTitle("Petty Cash")
 $listItem = $list.GetItemById(98)
-$listItem["Author"] = "28;#i:0#.f|membership|wangu@oshochem.com"
+$listItem["Author"] = "28;#i:0#.f|membership|infouser@test.com"
 $listItem.Update()
 $context.Load($listItem)      
 $context.ExecuteQuery() 
