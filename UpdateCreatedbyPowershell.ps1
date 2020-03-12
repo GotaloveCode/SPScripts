@@ -21,9 +21,9 @@ Function Get-ListItems([Microsoft.SharePoint.Client.ClientContext]$Context, [Str
 
 
 
-$UserName = "sync@oshochem.com"
-$Password = "Starzole$"    
-$Url = "https://oshoche.sharepoint.com/sites/ke"
+$UserName = "info@test.com"
+$Password = "tested"    
+$Url = "https://test.sharepoint.com/sites/hr"
 
 
 $context = Get-SPOContext -Url $Url -UserName $UserName -Password $Password
